@@ -1,20 +1,16 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
 
         Quiz quiz = new Quiz();
 
 
-
 // Pregunta 1
         Pregunta pregunta1 = new Pregunta(
-            "1) ¿Qué planeta es conocido como el 'planeta rojo'?",
-            new String[]{"Marte", "Júpiter", "Saturno", "Venus"},
-            0 // La respuesta correcta es la opción 0 (Marte)
+                "1) ¿Qué planeta es conocido como el 'planeta rojo'?",
+                new String[]{"Marte", "Júpiter", "Saturno", "Venus"},
+                0 // La respuesta correcta es la opción 0 (Marte)
         );
 
 // Pregunta 2
@@ -90,7 +86,6 @@ public class Main {
         quiz.agregarPregunta(pregunta8);
         quiz.agregarPregunta(pregunta9);
         quiz.agregarPregunta(pregunta10);
-
 
 
         quiz.iniciar();
