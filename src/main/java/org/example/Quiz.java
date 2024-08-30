@@ -1,7 +1,8 @@
 package org.example;
-import java.util.Scanner;
-import java.util.List;
+
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 
 public class Quiz {
@@ -16,6 +17,7 @@ public class Quiz {
     public void agregarPregunta(Pregunta pregunta) {
         preguntas.add(pregunta);
     }
+
     public void iniciar() {
         int puntaje = 0;
 
@@ -33,7 +35,7 @@ public class Quiz {
                 System.out.println("¡Respuesta correcta!");
                 puntaje++;
             } else {
-                System.out.println("Respuesta incorrecta. La respuesta correcta era: " + (pregunta.getOpciones().length));
+                System.out.println("Respuesta incorrecta. La respuesta correcta era: " + (pregunta.getRespuesta()));
             }
             System.out.println();
         }
